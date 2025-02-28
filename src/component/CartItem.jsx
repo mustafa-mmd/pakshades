@@ -1,9 +1,11 @@
 import React from "react";
 import "./Cartitem.css"
-
+import Navbar from "./Navbar";
+import Foter from "./Foter";
 function CartItem({ cartItems, removeFromCart }) {
   return (
     <>
+    <Navbar/>
     <h1 className="carth1">Your Cart</h1>
     
     <div className="cart-container">
@@ -17,12 +19,16 @@ function CartItem({ cartItems, removeFromCart }) {
             <div className="cart-details">
               <h3>{item.title}</h3>
               <p>${item.price}</p>
+              <div className="cartbuttdiv">
               <button className="remove-btn" onClick={() => removeFromCart(item)}>Remove</button>
+              <button className="button">Buy Now</button>
+              </div>
             </div>
           </div>
         ))
       )}
     </div>
+    <Foter/>
     </>
   );
 }

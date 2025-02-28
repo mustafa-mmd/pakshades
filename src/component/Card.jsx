@@ -1,4 +1,4 @@
-// import React from "react";
+
 // import "./Card.css";
 // function Card(props) {
 //   return (
@@ -80,9 +80,11 @@ function Card({ img, title, price, addToCart }) {
         </div>
       </div>
       <div className="card-footer">
+
         <button className="button" onClick={() => addToCart({ img, title, price })}>
           Add To Cart
         </button>
+<button className="button">Buy Now</button>
       </div>
     </div>
   );
