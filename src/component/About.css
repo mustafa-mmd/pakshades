@@ -1,0 +1,23 @@
+.about p{
+  width: 380px;
+  font-family:Times, serif;
+  line-height: 23px;
+  font-size: 1rem;
+}
+.about img{
+  width: 300px;
+  height: 270px;
+  border-radius: 7px;
+  box-shadow: 6px 6px 8px rgb(39, 43, 50);
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.abouth1{
+  text-align: center;
+  margin-top: 20px;
+}

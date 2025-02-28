@@ -1,0 +1,30 @@
+.nav{
+  background-color: #f2f3f4;
+  padding: 30px;
+}
+.navul{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content:space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+
+}
+.navli:hover{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.64);
+  font-weight: bold;
+}
+a:hover{
+  color: #1ca589;
+}
+.logo{
+  font-size: 2rem;
+color:#0b5345;
+}
