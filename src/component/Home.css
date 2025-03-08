@@ -3,7 +3,7 @@
 
   width: 100%;
   /* height: 270px; */
-  height: 310px;
+  height: 400px;
   display:flex;
 /* padding: 10px; */
 /* margin-top: 30px; */
@@ -30,7 +30,7 @@ color: aliceblue;
 .herobutt:hover{
   cursor: pointer;
 }
-.heroright{
+/* .heroright{
   padding-top: 45px;
 }
 .heroimg{
@@ -39,7 +39,53 @@ width: 350px;
 border-radius: 10px;
 box-shadow: 5px 5px 15px gray;
 
+} */
+
+
+/* 3D slider img */
+
+/* .imgslider3D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+
+  overflow: hidden;
+} */
+
+.slider {
+  position: relative;
+  width: 350px;
+  height: 250px; 
+  transform-style: preserve-3d;
+  animation: rotate 15s infinite linear;
+  padding-top: 40px;
 }
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50px;
+}
+
+.slide:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+.slide:nth-child(2) { transform: rotateY(90deg) translateZ(300px); }
+.slide:nth-child(3) { transform: rotateY(180deg) translateZ(300px); }
+.slide:nth-child(4) { transform: rotateY(270deg) translateZ(300px); }
+
+@keyframes rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+
 
 .cardcontainer{
   display: flex;
