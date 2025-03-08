@@ -18,30 +18,28 @@ import img5 from "../assets/sunglass5.jpg";
 import img6 from "../assets/sunglass6.jpg";
 import img7 from "../assets/sunglass7.jpg";
 import img8 from "../assets/sunglass8.jpg";
-function Products() {
+function Products({ addToCart }) {
+  const products = [
+      { img: img1, title: "Sunglass 1", price: 25 },
+      { img: img2, title: "Sunglass 2", price: 30 },
+      { img: img3, title: "Sunglass 3", price: 28 },
+      { img: img4, title: "Sunglass 4", price: 35 },
+      { img: img5, title: "Sunglass 5", price: 22 },
+      { img: img6, title: "Sunglass 6", price: 27 },
+      { img: img7, title: "Sunglass 7", price: 32 },
+      { img: img8, title: "Sunglass 8", price: 29 },
+    ];
   return (
-    <div>
+    <>
       <Navbar/>
       <div className='cardcontainer'>
-        <Card img={img1}/>
-        <Card img={img2}/>
-        <Card img={img3}/>
-        <Card img={img4}/>
-        <Card img={img5}/>
-        <Card img={img6}/>
-        <Card img={img7}/>
-        <Card img={img8}/>
-        {/* <Card img={img9}/> */}
-        {/* <Card img={img10}/>
-        <Card img={img11}/>
-        <Card img={img12}/>
-        <Card img={img13}/>
-        <Card img={img14}/>
-        <Card img={img15}/>
-        <Card img={img16}/> */}
+        {products.map((product, index) => (
+          <Card key={index} img={product.img} title={product.title} price={product.price} addToCart={addToCart} />
+        ))}
       </div>
+      
       <Foter/>
-    </div>
+    </>
   )
 }
 

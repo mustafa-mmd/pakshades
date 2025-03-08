@@ -28,3 +28,6 @@ a:hover{
   font-size: 2rem;
 color:#0b5345;
 }
+.active{
+  color: rgb(51, 0, 255);
+}

@@ -1,0 +1,115 @@
+/* OrderForm.css */
+
+/* Form Container (Ultra Compact) */
+.buycont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.order-form-container {
+  width: 92%; /* Takes most of the screen width */
+  max-width: 300px; /* Even smaller */
+  margin: 15px auto;
+  padding: 8px; /* Minimal padding */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Minimal border-radius */
+}
+
+/* Form Title */
+.form-title {
+  font-size: 16px; /* Even smaller title */
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #333;
+}
+
+/* Input & Textarea */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 6px; /* Less padding */
+  margin-bottom: 5px; /* Less spacing */
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Even smaller */
+  font-size: 11px; /* Compact font size */
+  transition: border-color 0.3s;
+}
+
+/* Focus Effect */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Textarea Styling */
+.form-textarea {
+  height: 50px; /* Smallest height */
+  resize: none;
+}
+
+/* Submit Button */
+.form-button {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 6px; /* Minimal padding */
+  font-size: 11px; /* Smaller font */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-button:hover {
+  background-color: #1e40af;
+}
+
+/* 🔥 Ultra Responsive Design */
+@media (max-width: 768px) {
+  .order-form-container {
+    width: 95%;
+    padding: 6px;
+  }
+
+  .form-title {
+    font-size: 14px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .form-button {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-form-container {
+    width: 98%;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .form-title {
+    font-size: 12px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 9px;
+    padding: 4px;
+  }
+
+  .form-button {
+    font-size: 9px;
+    padding: 4px;
+  }
+}

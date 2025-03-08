@@ -11,11 +11,12 @@ import img5 from "../assets/sunglass5.jpg";
 import img6 from "../assets/sunglass6.jpg";
 import img7 from "../assets/sunglass7.jpg";
 import img8 from "../assets/sunglass8.jpg";
+import img10 from "../assets/sunglass10.jpeg"
 import Footer from './Foter';
 
 function Home({ addToCart }) {
   const products = [
-    { img: img1, title: "Sunglass 1", price: 25 },
+    { img: img10, title: "CatEye", price: 25 },
     { img: img2, title: "Sunglass 2", price: 30 },
     { img: img3, title: "Sunglass 3", price: 28 },
     { img: img4, title: "Sunglass 4", price: 35 },
@@ -37,7 +38,7 @@ function Home({ addToCart }) {
           <img src={hero} className='heroimg' alt="Hero" />
         </div>
       </div>
-      <h1 style={{ marginLeft: "20%" }}>Sun Glasses For You!</h1>
+      <h1 style={{ marginLeft: "25%" }}>Sun Glasses For You!</h1>
 
       <div className='cardcontainer'>
         {products.map((product, index) => (

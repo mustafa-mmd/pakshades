@@ -5,6 +5,7 @@ import About from "./component/About";
 import Products from "./component/Products";
 import Contacts from "./component/Contacts";
 import CartItem from "./component/CartItem";
+import BuyPage from "./component/BuyPage";
 function App() {
   
   const [cartItems, setCartItems] = useState([]); // ✅ Cart state defined
@@ -30,14 +31,15 @@ function App() {
           element={<Home cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart} />} 
         />
         <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
+        
+        <Route path="/products" element={<Products cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart}/>} />
         {/* <Route path="/cartitem" element={<CartItem />} /> */}
         <Route 
           path="/cartitem" 
           element={<CartItem cartItems={cartItems} removeFromCart={removeFromCart} />} 
         />
         <Route path="/contacts" element={<Contacts />} />
-
+        <Route path="/buy" element={<BuyPage />} />
       </Routes>
     </Router>
   );

@@ -12,10 +12,14 @@ function Navbar() {
       <ul className='navul'>
 
         <li className='logo'>Pak Shades</li>
-        <li className='navli'><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/products">Products</NavLink></li>
-        <li><NavLink to="/cartitem">Cart Items</NavLink></li>
+        <li className='navli'><NavLink to="/" >Home</NavLink></li>
+
+        <li><NavLink to="/about" >About</NavLink></li>
+
+        <li><NavLink to="/products" >Products</NavLink></li>
+
+        <li><NavLink to="/cartitem" >Cart Items</NavLink></li>
+
         <li><NavLink to="/contacts" >Contacts</NavLink></li>
         
       </ul>
