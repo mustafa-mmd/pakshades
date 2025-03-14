@@ -21,3 +21,9 @@
   text-align: center;
   margin-top: 20px;
 }
+@media screen and (max-width:580px) {
+  .about{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

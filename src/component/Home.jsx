@@ -59,7 +59,7 @@ function Home({ addToCart }) {
         </div>
 
       </div>
-      <h1 style={{ marginLeft: "25%" }}>Sun Glasses For You!</h1>
+      <h1 style={{ marginLeft: "22%" }}>Sun Glasses For You!</h1>
 
       <div className='cardcontainer'>
         {products.map((product, index) => (

@@ -1,6 +1,4 @@
-/* OrderForm.css */
 
-/* Form Container (Ultra Compact) */
 .buycont{
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +32,7 @@
   margin-bottom: 5px; /* Less spacing */
   border: 1px solid #ccc;
   border-radius: 3px; /* Even smaller */
-  font-size: 11px; /* Compact font size */
+  font-size: 13px; /* Compact font size */
   transition: border-color 0.3s;
 }
 
@@ -57,7 +55,7 @@
   background-color: #2563eb;
   color: white;
   padding: 6px; /* Minimal padding */
-  font-size: 11px; /* Smaller font */
+  font-size: 13px; /* Smaller font */
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -81,12 +79,12 @@
 
   .form-input,
   .form-textarea {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
   }
 
   .form-button {
-    font-size: 10px;
+    font-size: 13px;
     padding: 5px;
   }
 }
@@ -104,7 +102,7 @@
 
   .form-input,
   .form-textarea {
-    font-size: 9px;
+    font-size: 10px;
     padding: 4px;
   }
 
