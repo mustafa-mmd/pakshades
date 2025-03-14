@@ -60,7 +60,7 @@ footer {
     /* font-size: 1.5rem; */
   }
   .logo{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -72,8 +72,11 @@ footer {
     flex-direction: column;
     
   }
+  .web-pages{
+    gap: 14px;
+  }
   .company-info p{
-    width: 300px;
+    width: 260px;
     /* font-size:3.3rem; */
     
   }
