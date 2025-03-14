@@ -16,14 +16,21 @@ import Footer from './Foter';
 
 function Home({ addToCart }) {
   const products = [
-    { img: img1, title: "CatEye", price: 25 },
-    { img: img2, title: "Sunglass 2", price: 30 },
-    { img: img3, title: "Sunglass 3", price: 28 },
-    { img: img4, title: "Sunglass 4", price: 35 },
-    { img: img5, title: "Sunglass 5", price: 22 },
-    { img: img6, title: "Sunglass 6", price: 27 },
-    { img: img7, title: "Sunglass 7", price: 32 },
-    { img: img8, title: "Sunglass 8", price: 29 },
+    { img: img1, title: "CatEye", price: 25, description:"img one description" },
+
+    { img: img2, title: "Sunglass 2", price: 30 , description:"img two description"},
+
+    { img: img3, title: "Sunglass 3", price: 28, description:"img three description" },
+
+    { img: img4, title: "Sunglass 4", price: 35, description:"img four description" },
+
+    { img: img5, title: "Sunglass 5", price: 22 , description:"img five description"},
+
+    { img: img6, title: "Sunglass 6", price: 27 , description:"img six description"},
+
+    { img: img7, title: "Sunglass 7", price: 32, description:"img seven description" },
+
+    { img: img8, title: "Sunglass 8", price: 29, description:"img eight description" },
   ];
 
   return (
@@ -56,7 +63,7 @@ function Home({ addToCart }) {
 
       <div className='cardcontainer'>
         {products.map((product, index) => (
-          <Card key={index} img={product.img} title={product.title} price={product.price} addToCart={addToCart} />
+          <Card key={index} img={product.img} title={product.title} price={product.price} description={product.description} addToCart={addToCart} />
         ))}
       </div>
 

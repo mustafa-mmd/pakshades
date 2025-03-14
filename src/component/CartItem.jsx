@@ -25,6 +25,7 @@ function CartItem({ cartItems, removeFromCart }) {
               <img src={item.img} alt={item.title} className="cart-img" />
               <div className="cart-details">
                 <h3>{item.title}</h3>
+                <p>{item.description}</p>
                 <p>${item.price}</p>
                 <div className="cartbuttdiv">
                   <button className="remove-btn" onClick={() => removeFromCart(item)}>Remove</button>

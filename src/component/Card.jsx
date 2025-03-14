@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
-function Card({ img, title, price, addToCart }) {
+function Card({ img, title, price, description,addToCart }) {
   const [isAdded, setIsAdded] = useState(false);
   const navigate = useNavigate(); 
 
   const handleAddToCart = () => {
-    addToCart({ img, title, price });
+    addToCart({ img, title,description, price });
     setIsAdded(true);
   };
 
   const handleBuyNow = () => {
-    navigate("/buy", { state: { item: { img, title, price } } }); // Sending item object
+    navigate("/buy", { state: { item: { img, title, price,description } } }); // Sending item object
   };
 
   return (
@@ -21,7 +21,7 @@ function Card({ img, title, price, addToCart }) {
       <div className="card-content">
         <div className="card-header">
           <h2 className="card-title">{title}</h2>
-          <p className="card-subtitle">stylish female sunglass!</p>
+          <p className="card-subtitle">{description}</p>
         </div>
         <div className="card-price">
           <p>

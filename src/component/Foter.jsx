@@ -4,14 +4,17 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { NavLink } from "react-router-dom";
+
+
 function Foter() {
   const openLink = (url) => {
     // window.open(url,'_blank' );
     window.location.href = url;
 
   };
+  
   return (
-
+<>
 <footer>
 <div>
             <div className="footer-container">
@@ -61,6 +64,7 @@ function Foter() {
               </div>
  </div>
 </footer>
+</>
   )
 }
 
