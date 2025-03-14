@@ -15,7 +15,7 @@ function Navbar() {
       <div className='nav-header'>
         <div className='logo'>Pak_Shades</div>
         <div className='hamburger' onClick={toggleNavbar}>
-          {isOpen ? <FiX size={30} /> : <FiMenu size={50} />}
+          {isOpen ? <FiX size={30} /> : <FiMenu size={36} />}
         </div>
       </div>
       <ul className={isOpen ? 'navul open' : 'navul'}>
