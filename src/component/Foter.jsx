@@ -24,15 +24,15 @@ function Foter() {
                   <p>Shield your eyes in style – premium sunglasses that blend fashion with UV protection. See the world clearer, shine brighter!..</p>
                   <div className="socials">
                     <div className='i'><button onClick={() => openLink('https://wa.me/923189946083?text=Hello%20PakShades%20Team!', '_blank')}>
-<WhatsAppIcon style={{fontSize:"30px"}}/>
+<WhatsAppIcon style={{fontSize:"22px"}}/>
  </button></div>
 
  <div className='i'><button onClick={() => openLink('https://www.instagram.com/pakshades_?igsh=bGQzaGkxcHRvYTJl', '_blank')}>
- <InstagramIcon  style={{fontSize:"30px"}}/>
+ <InstagramIcon  style={{fontSize:"22px"}}/>
 </button></div>
 
  <div className='i'><button onClick={() => openLink('https:/wwwfacebook.com/share/1XkUsswaUy/', '_blank')}>
- <FacebookIcon style={{fontSize:"30px"}}/>
+ <FacebookIcon style={{fontSize:"22px"}}/>
  </button></div>
  </div>
  </div>
@@ -55,10 +55,10 @@ function Foter() {
                     <p>Our story</p>
                   </div>
                   <div>
-                    <h3>Contact</h3>
-                  <p>Getting Started</p>
-                  <p>Pricing</p>
-                  <p>Resources</p>
+                    <h3>Contacts</h3>
+                  <p>WhatsApp: 03189946083</p>
+                  <p>Gmail: babarali11377@gmail.come</p>
+                  <p>Instagram: pakshades_</p>
                   </div>
                 </div>
               </div>
