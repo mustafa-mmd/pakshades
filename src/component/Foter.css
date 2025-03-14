@@ -2,7 +2,7 @@
 footer {
   background-color:#f0f3f4  ;
   padding: 48px 0;
-  /* width: 100%; */
+  width: 100%;
   
 }
 .footer-container {
@@ -52,41 +52,29 @@ footer {
 
 .web-pages a p:hover{
  color: #000;
+ 
 }
 
 @media screen and (max-width:1050px){
-  footer{
-    width: 1100px;
-    /* font-size: 1.5rem; */
-  }
+  
   .logo{
     font-size: 1.7rem;
   }
 }
 
 @media screen and (max-width: 796px) {
-  /* footer{
-    font-size: 2.7rem;
-  } */
+  
   .footer-container{
     flex-direction: column;
     
   }
-  .web-pages{
-    gap: 14px;
-  }
-  .company-info p{
-    width: 260px;
-    /* font-size:3.3rem; */
+  
+  /* .company-info p {
     
-  }
+    width: auto;
+  } */
   .web-pages{
     flex-wrap: wrap;
     margin-top: 48px;
   }
 }
-/* @media  screen and (max-width:530px) {
-  footer{
-    height: 1300px;
-  }
-} */
