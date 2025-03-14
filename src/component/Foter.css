@@ -1,43 +1,89 @@
-.foter{
-  background-color: #17202a;
-  padding: 50px;
-  margin-top: 20px;
+/* footer */
+footer {
+  background-color:#f0f3f4  ;
+  padding: 48px 0;
+  /* width: 100%; */
+  
 }
-.foterul{
-  text-decoration: none;
+.footer-container {
+  margin: 0 5%;
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
 }
-li{
-  list-style: none;
+
+.company-info a {
+  height: 30px;
+  margin-bottom: 24px;
 }
-.anchor{
-  color: aliceblue;
+.company-info p {
+  margin: 15px 0;
+  width: 300px;
 }
-.foterlogo{
-  color: aliceblue;
-  font-weight: bold;
-  font-size: 2rem;
-  font-style: italic;
+
+.socials{
+  display: flex;
+  gap: 20px;
 }
-.socialicon{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-transition: 1.7s;
-}
-.socialicon button:hover{
-  transform: scale(1.3);
+
+.i {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  color: #eee9e9;
+  background: #3974FE;
+  border-radius: 50%;
   cursor: pointer;
+  transition: all .45s ease;
 }
-.policy{
-  color: aliceblue;
+
+.i:hover{
+  transform: translateY(-5px);
+  background: #6722f1;
+  color: #fff;
 }
-.policy{
+
+.web-pages{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
+  gap: 25px;
 }
+.web-pages h3{
+  margin-bottom: 24px;
+}
+
+.web-pages a p:hover{
+ color: #000;
+}
+
+@media screen and (max-width:1050px){
+  footer{
+    width: 1100px;
+    font-size: 1.5rem;
+  }
+  .logo{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  footer{
+    font-size: 2.7rem;
+  }
+  .footer-container{
+    flex-direction: column;
+    
+  }
+  .company-info p{
+    width: 600px;
+    font-size:3.3rem;
+    
+  }
+  .web-pages{
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+}
+/* @media  screen and (max-width:530px) {
+  footer{
+    height: 1300px;
+  }
+} */

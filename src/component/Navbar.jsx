@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className='nav'>
       <div className='nav-header'>
-        <div className='logo'>Pak Shades</div>
+        <div className='logo'>Pak_Shades</div>
         <div className='hamburger' onClick={toggleNavbar}>
           {isOpen ? <FiX size={30} /> : <FiMenu size={50} />}
         </div>

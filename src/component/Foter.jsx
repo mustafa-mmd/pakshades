@@ -11,43 +11,56 @@ function Foter() {
 
   };
   return (
-    <div className='foter'>
-      <div className='socialicon'>
 
-<button onClick={() => openLink('https://www.facebook.com/share/1XkUsswaUy/')}>
-<FacebookIcon />
-</button>
+<footer>
+<div>
+            <div className="footer-container">
+                {/* left side  */}
+                <div className="company-info">
+                    <h1 className="logo">Pak_shades</h1>
+                  <p>Shield your eyes in style – premium sunglasses that blend fashion with UV protection. See the world clearer, shine brighter!..</p>
+                  <div className="socials">
+                    <div className='i'><button onClick={() => openLink('https://wa.me/923189946083?text=Hello%20PakShades%20Team!', '_blank')}>
+<WhatsAppIcon style={{fontSize:"30px"}}/>
+ </button></div>
 
-<button onClick={() => openLink('https://www.instagram.com/pakshades_?igsh=bGQzaGkxcHRvYTJl')}>
-<InstagramIcon />
-</button>
+ <div className='i'><button onClick={() => openLink('https://www.instagram.com/pakshades_?igsh=bGQzaGkxcHRvYTJl', '_blank')}>
+ <InstagramIcon  style={{fontSize:"30px"}}/>
+</button></div>
 
-{/* <button onClick={() => openLink('https://wa.me/+923189946083" target="_blank" rel="noopener noreferrer')}>
-<WhatsAppIcon/>
-</button> */}
+ <div className='i'><button onClick={() => openLink('https:/wwwfacebook.com/share/1XkUsswaUy/', '_blank')}>
+ <FacebookIcon style={{fontSize:"30px"}}/>
+ </button></div>
+ </div>
+ </div>
 
-</div>
-      <ul className='foterul'>
-
-<li className='foterlogo'>Pak Shades</li>
-<li><NavLink to="/"  className="anchor">Home</NavLink></li>
-<li><NavLink to="/about" className="anchor">About</NavLink></li>
-<li><NavLink to="/products" className="anchor">Products</NavLink></li>
-<li><NavLink to="/addtocart" className="anchor">Cart Items</NavLink></li>
-<li><NavLink to="/contacts" className="anchor">Contacts</NavLink></li>
-
-</ul>
-
-<div className='policy'>
-  <h5>
-    Founder : @Babar Ali
-  </h5>
-  <h5>Phone / Whatsapp : 03189946083</h5>
-  <h5>Email : babarali11377@gmail.com</h5>
-</div>
-
-
-    </div>
+ {/* right side  */}
+ <div className="web-pages">
+<div>
+ <h3>Information</h3>
+                    
+<NavLink to="/"  className="anchor"><p>Home</p></NavLink>
+<NavLink to="/about" className="anchor"><p>About</p></NavLink>
+<NavLink to="/products" className="anchor"><p>Products</p></NavLink>
+<NavLink to="/addtocart" className="anchor"><p>Cart Items</p></NavLink>
+<NavLink to="/contacts" className="anchor"><p>Contacts</p></NavLink>
+                  </div>
+                  <div>
+                    <h3>Company</h3>
+                    <p>Community</p>
+                    <p>Career</p>
+                    <p>Our story</p>
+                  </div>
+                  <div>
+                    <h3>Contact</h3>
+                  <p>Getting Started</p>
+                  <p>Pricing</p>
+                  <p>Resources</p>
+                  </div>
+                </div>
+              </div>
+ </div>
+</footer>
   )
 }
 
