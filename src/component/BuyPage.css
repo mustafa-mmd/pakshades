@@ -1,61 +1,61 @@
 
-.buycont{
+ .buycont{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .order-form-container {
-  width: 92%; /* Takes most of the screen width */
-  max-width: 300px; /* Even smaller */
+  width: 92%; 
+  max-width: 300px; 
   margin: 15px auto;
-  padding: 8px; /* Minimal padding */
+  padding: 8px; 
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px; /* Minimal border-radius */
+  border-radius: 4px; 
 }
 
-/* Form Title */
+
 .form-title {
-  font-size: 16px; /* Even smaller title */
+  font-size: 16px; 
   font-weight: bold;
   margin-bottom: 8px;
   text-align: center;
   color: #333;
 }
 
-/* Input & Textarea */
+
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 6px; /* Less padding */
-  margin-bottom: 5px; /* Less spacing */
+  padding: 6px; 
+  margin-bottom: 5px; 
   border: 1px solid #ccc;
-  border-radius: 3px; /* Even smaller */
-  font-size: 13px; /* Compact font size */
+  border-radius: 3px; 
+  font-size: 13px; 
   transition: border-color 0.3s;
 }
 
-/* Focus Effect */
+
 .form-input:focus,
 .form-textarea:focus {
   border-color: #2563eb;
   outline: none;
 }
 
-/* Textarea Styling */
+
 .form-textarea {
-  height: 50px; /* Smallest height */
+  height: 50px; 
   resize: none;
-}
+} 
 
 /* Submit Button */
 .form-button {
   width: 100%;
   background-color: #2563eb;
   color: white;
-  padding: 6px; /* Minimal padding */
-  font-size: 13px; /* Smaller font */
+  padding: 6px; 
+  font-size: 13px; 
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -64,6 +64,25 @@
 
 .form-button:hover {
   background-color: #1e40af;
+}
+/* for extra img */
+.small-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.small-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.small-image:hover {
+  transform: scale(1.1);
 }
 
 /* 🔥 Ultra Responsive Design */
@@ -111,3 +130,4 @@
     padding: 4px;
   }
 }
+

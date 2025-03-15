@@ -4,6 +4,7 @@ import Foter from "./Foter"
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./BuyPage.css";
+import { useState } from "react";
 const BuyPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -37,8 +38,24 @@ const BuyPage = () => {
         }
       );
   };
-  
-  
+  //for counter
+  const [count, setCount] = useState(0);
+const [totalPrice, setTotalPrice] = useState(0);
+
+const increment = () => {
+  const newCount = count + 1;
+  setCount(newCount);
+  setTotalPrice(newCount * (item?.price || 0)); // Multiply count with item price
+};
+
+const decrement = () => {
+  if (count > 0) {
+    const newCount = count - 1;
+    setCount(newCount);
+    setTotalPrice(newCount * (item?.price || 0));
+  }
+};
+
   return (
     <>
     <Navbar/>
@@ -48,13 +65,17 @@ const BuyPage = () => {
       <h1>Buy Page</h1>
       {item ? (
         <div>
-          <img src={item.img} alt={item.title} style={{ width: "400px", borderRadius: "10px" }} />
+          <img src={item.img} alt={item.title} style={{ width: "350px", borderRadius: "10px" }} />
           <h2>{item.title}</h2>
-          <p>Price: ${item.price}</p>
+          <p>Details : {item.description}</p>
+          <p>Price : {item.price} PKR</p>
           
           <button className="remove-btn" onClick={handleRemoveFromCart}>
             Remove from Buy
           </button>
+          <button className="herobutt" style={{width:"50px"}} onClick={decrement}>-</button>
+          <button style={{padding:"5px 16px" }}>{count}</button>
+          <button className="herobutt"style={{width:"60px"}}  onClick={increment}>+</button>
         </div>
       ) : (
         <p>No item selected.</p>
@@ -73,8 +94,28 @@ const BuyPage = () => {
       <input type="text" name="postal_code" placeholder="Postal Code" required className="form-input" />
       
       <input type="text" name="product_name" placeholder="Product Name" required className="form-input" />
-      <input type="number" name="quantity" placeholder="Quantity" required className="form-input" />
-      <input type="number" name="total_price" placeholder="Total Price (PKR)" required className="form-input" />
+      {/* Quantity Input Field */}
+<input 
+  type="text" 
+  name="quantity" 
+  placeholder="Quantity" 
+  required 
+  className="form-input" 
+  value={`Total: ${count}`} 
+  readOnly 
+/>
+
+{/* Total Price Input Field */}
+<input 
+  type="text" 
+  name="total_price" 
+  placeholder="Total Price (PKR)" 
+  required 
+  className="form-input" 
+  value={`Total Price: ${totalPrice} PKR`} 
+  readOnly 
+/>
+
       
       <textarea name="message" placeholder="Type Message Here" className="form-textarea"></textarea>
 
@@ -90,4 +131,5 @@ const BuyPage = () => {
 };
 
 export default BuyPage;
+
 

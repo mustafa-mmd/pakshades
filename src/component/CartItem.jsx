@@ -26,7 +26,7 @@ function CartItem({ cartItems, removeFromCart }) {
               <div className="cart-details">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <p>${item.price}</p>
+                <p>price : {item.price} PKR</p>
                 <div className="cartbuttdiv">
                   <button className="remove-btn" onClick={() => removeFromCart(item)}>Remove</button>
                   <button className="button" onClick={() => handleBuyNow(item)}>Buy Now</button>

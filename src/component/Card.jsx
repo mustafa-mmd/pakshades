@@ -25,7 +25,7 @@ function Card({ img, title, price, description,addToCart }) {
         </div>
         <div className="card-price">
           <p>
-            <span className="price">${price}</span>
+            <span className="price">price : {price} PKR</span>
           </p>
         </div>
       </div>
