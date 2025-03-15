@@ -68,13 +68,7 @@ footer {
     flex-direction: column;
     
   }
-  footer{
-    font-size: 18px;
-  }
-  /* .company-info p {
-    
-    width: auto;
-  } */
+  
   .web-pages{
     flex-wrap: wrap;
     margin-top: 48px;
