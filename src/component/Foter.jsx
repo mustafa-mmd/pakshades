@@ -31,9 +31,10 @@ function Foter() {
  <InstagramIcon  style={{fontSize:"22px"}}/>
 </button></div>
 
- <div className='i'><button onClick={() => openLink('https:/wwwfacebook.com/share/1XkUsswaUy/', '_blank')}>
- <FacebookIcon style={{fontSize:"22px"}}/>
- </button></div>
+<div className='i'><button onClick={() => openLink('https://www.facebook.com/share/1XkUsswaUy/', '_blank')}>
+ <FacebookIcon  style={{fontSize:"22px"}}/>
+</button></div>
+
  </div>
  </div>
 
@@ -57,8 +58,9 @@ function Foter() {
                   <div>
                     <h3>Contacts</h3>
                   <p>WhatsApp: 03189946083</p>
-                  <p>Gmail: babarali11377@gmail.come</p>
+                  <p>Gmail: babarali11377@gmail.com</p>
                   <p>Instagram: pakshades_</p>
+                  <p>Facebook :  https://www.facebook.com/share/1XkUsswaUy/ </p>
                   </div>
                 </div>
               </div>
