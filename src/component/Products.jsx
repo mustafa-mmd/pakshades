@@ -41,9 +41,9 @@ function Products({ addToCart }) {
       
           { img: img8, title: "Ray-ban Bold square sunglass", price: 999, description:"Bold square shaped frame with a matte black finish and dark lenses" },
       
-          { img: img9, title: "Sunglass 9", price: 29, description:"img eight description" },
+          { img: img9, title: "Bold Shield sunglasses", price: 999, description:"Ultra-Modern Shield skycolor sunglasses" },
       
-          { img: img10, title: "Sunglass 10", price: 29, description:"img eight description" },
+          { img: img10, title: "Bold Shield sunglasses", price: 999, description:"Ultra-Modern Shield sunglasses" },
       
           { img: img11, title: "Cat-Eye", price: 999, description:"Elegant red cat-eye sunglass" },
       
