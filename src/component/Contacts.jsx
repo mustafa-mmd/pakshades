@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 function Contacts() {
   return (
-    <div className='contacts'>
+    <div className='contacts' style={{backgroundColor:"#f0f3f4", height:"100vh"}}>
       <Navbar/>
       <Foter/>
     </div>

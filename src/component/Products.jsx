@@ -18,10 +18,10 @@ import img13 from "../assets/sunglass13.jpg";
 import img14 from "../assets/sunglass14.jpg";
 import img15 from "../assets/sunglass15.jpg";
 import img16 from "../assets/sunglass16.jpg";
-import img17 from "../assets/sunglass17.jpg"
-import img18 from "../assets/sunglass18.jpg"
-import img19 from "../assets/sunglass19.jpg"
-import img20 from "../assets/sunglass20.jpg"
+// import img17 from "../assets/sunglass17.jpg"
+// import img18 from "../assets/sunglass18.jpg"
+// import img19 from "../assets/sunglass19.jpg"
+// import img20 from "../assets/sunglass20.jpg"
 
 function Products({ addToCart }) {
   const products = [
@@ -57,13 +57,7 @@ function Products({ addToCart }) {
       
           { img: img16, title: "Bold Shield sunglasses", price: 999, description:"Ultra-Modern Shield sunglasses" },
       
-          { img: img17, title: "Cat-Eye", price: 999, description:"Elegant white cat-eye sunglass" },
       
-          { img: img18, title: "Cat-Eye", price: 999, description:"Elegant white,red,trasparent cat-eye sunglasses" },
-      
-          { img: img19, title: "Square Sunglass", price: 1299, description:"Luxury-Orange-Square-Rimless-Sunglass" },
-      
-          { img: img20, title: "Bold Shield sunglasses", price: 999, description:"Ultra-Modern Shield sunglasses" },
       
     ];
   return (
